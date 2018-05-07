@@ -1,6 +1,7 @@
 // Variables
 
 @primary: #28c3ab;
+@blue: #1DA1F2;
 @dark: #000;
 @light: #fff;
 
@@ -11,7 +12,6 @@ body {
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: @light;
-    background-color: @dark;
 }
 
 html {
@@ -49,16 +49,14 @@ p {
 }
 
 a {
-    color: @primary;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
+    color: @blue;
     transition: all .2s ease-in-out;
 }
 
 a:hover,
 a:focus {
     text-decoration: none;
-    color: darken(@primary, 20%);
+    color: darken(@blue, 20%);
 }
 
 .light {
@@ -88,8 +86,6 @@ a:focus {
 }
 
 .navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
@@ -117,8 +113,6 @@ a:focus {
         border-bottom: none;
         letter-spacing: 1px;
         background: transparent;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
@@ -140,13 +134,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: @light;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    color: @dark;
+    background-color: @light;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 .intro-body {
@@ -169,104 +159,21 @@ a:focus {
     }
 
     .brand-heading {
-        font-size: 100px;
+        font-size: 70px;
     }
 
     .intro-text {
-        font-size: 25px;
-    }
-}
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid @light;
-    border-radius: 35px;
-    font-size: 40px;
-    color: @light;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: none;
-    color: @light;
-    background: rgba(255,255,255,0.1);
-}
-
-.page-scroll .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.page-scroll .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {    
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        font-size: 20px;
     }
 
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+    .navbar-custom a {
+        color: @dark;
     }
 }
-
-@-moz-keyframes pulse {    
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
  // Content Sections 
 
  .content-section {
     padding-top: 100px;
-}
-
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: @light;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 #map {
@@ -296,23 +203,22 @@ a:focus {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
+    border-radius: 2px;
     transition: all .3s ease-in-out;
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
+    border: 1px solid @dark;
+    color: @dark;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid @primary;
+    border: 1px solid @dark;
     outline: none;
-    color: @dark;
-    background-color: @primary;
+    color: @light;
+    background-color: @dark;
 }
 
 .btn-huge {
@@ -347,13 +253,11 @@ a:focus {
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255,255,255,0.2);
 }
 
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255,255,255,0.2);
 }
 
 img::selection {
@@ -362,8 +266,4 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,0.2);
 }
