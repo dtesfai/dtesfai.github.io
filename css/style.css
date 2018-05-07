@@ -33,7 +33,7 @@ p {
   }
 }
 a {
-  color: #1DA1F2;
+  color: #1da1f2;
   transition: all 0.2s ease-in-out;
 }
 a:hover,
@@ -46,7 +46,6 @@ a:focus {
 }
 .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #000;
@@ -67,7 +66,6 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
   outline: none;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar-toggle {
   padding: 4px 6px;
@@ -90,10 +88,8 @@ a:focus {
     padding: 0;
     background-color: #000;
   }
-  .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
 }
+
 .intro {
   display: table;
   width: 100%;
@@ -108,9 +104,6 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
 }
-.brand-heading {
-  font-size: 40px;
-}
 .intro-text {
   font-size: 18px;
 }
@@ -118,9 +111,6 @@ a:focus {
   .intro {
     height: 100%;
     padding: 0;
-  }
-  .brand-heading {
-    font-size: 70px;
   }
   .intro-text {
     font-size: 20px;
