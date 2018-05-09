@@ -53,7 +53,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #000;
+  background-color: #39CCCC;
 }
 .navbar-brand {
   font-weight: 700;
@@ -62,7 +62,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: #000;
+  color: #fff;
 }
 .navbar-custom .nav li a {
   transition: background 0.3s ease-in-out;
@@ -76,7 +76,7 @@ a:focus {
 .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 .navbar-toggle:focus,
 .navbar-toggle:active {
@@ -92,7 +92,7 @@ a:focus {
   }
   .top-nav-collapse {
     padding: 0;
-    background-color: #000;
+    background-color: #fff;
   }
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
