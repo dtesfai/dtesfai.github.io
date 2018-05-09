@@ -163,8 +163,8 @@ a:focus {
 .btn-default:focus {
   border: 1px solid #fff;
   outline: none;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .btn-huge {
   padding: 25px;
