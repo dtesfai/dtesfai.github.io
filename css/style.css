@@ -163,7 +163,7 @@ a:focus {
 .btn-default:focus {
   border: 1px solid #fff;
   outline: none;
-  color: #fff;
+  color: #000;
   background-color: #fff;
 }
 .btn-huge {
